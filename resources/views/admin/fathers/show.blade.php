@@ -11,8 +11,8 @@
       <div class="panel panel-info">
         <!-- Default panel contents -->
         <div class="panel-heading"> Ver Padre </div>
-        
-      
+
+
         <!-- List group -->
         <ul class="list-group">
           <li class="list-group-item"> <strong> Nombre: </strong> {{ $father->name }} </li>
@@ -27,5 +27,5 @@
   </div>
 
 </div>
-  
+
 @stop

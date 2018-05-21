@@ -45,7 +45,7 @@ class AssistanceController extends Controller
      */
     public function store(Request $request)
     {
-        for ($i=0; $i <= 3; $i++) {
+        for ($i=0; $i <= $request->student; $i++) {
           // code...
 
             $assistance = new Assistance;

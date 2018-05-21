@@ -14,10 +14,10 @@
     </div>
     <div class="box-body">
 
-      {!! Form::model($complaint, ['route' => ['denuncias.update', $complaint->id], 'method' => 'PUT']) !!}
+      {!! Form::model($complaint, ['route' => ['denuncias.update', $complaint->id], 'method' => 'PUT', 'enctype' => 'multipart/form-data']) !!}
         {{ csrf_field() }}
 
-        @include('admin.schools.partials.form')
+        @include('admin.complaints.partials.form')
 
       {!! Form::close() !!}
 

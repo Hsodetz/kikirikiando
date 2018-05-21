@@ -14,7 +14,7 @@
     </div>
     <div class="box-body">
 
-      {!! Form::open(['route' => 'denuncias.store', 'method' => 'POST']) !!}
+      {!! Form::open(['route' => 'denuncias.store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
         {{ csrf_field() }}
 
         @include('admin.complaints.partials.form')

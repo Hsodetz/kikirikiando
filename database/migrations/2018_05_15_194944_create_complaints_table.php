@@ -22,7 +22,7 @@ class CreateComplaintsTable extends Migration
             $table->string('affair', 50);
             $table->text('text');
             $table->string('image');
-            $table->string('file');
+            $table->string('file')->nullable();
             $table->enum('gravity', ['HIGH', 'MEDIUM', 'LOW'])->default('LOW');
 
             $table->foreign('father_id')->references('id')->on('fathers')->onDelete('cascade');

@@ -39,5 +39,3 @@ Route::resource('colegios', 'Admin\SchoolController');
 Route::resource('estudiantes', 'Admin\StudentController');
 
 Route::resource('profesores', 'Admin\TeacherController');
-
-

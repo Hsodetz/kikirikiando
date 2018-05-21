@@ -29,15 +29,38 @@
   {!! Form::textarea('text', null, ['class' => 'form-control', 'placeholder' => 'Agregue descripcion', 'rows' => '3']) !!}
 
 </div>
-{{--
+
 <div class="form-group">
 
-  {!! Form::label('address', 'Direccion') !!}
-
-  {!! Form::text('address', null, ['class' => 'form-control', 'placeholder' => 'Introduzca la direccion del colegio']) !!}
+  {!! Form::label('image', 'Imagen') !!}
+  {!! Form::file('image', ['class' => 'form-control']) !!}
 
 </div>
---}}
+
+<div class="form-group">
+
+  {!! Form::label('file', 'Archivo') !!}
+  {!! Form::file('file', ['class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group">
+
+  {!! Form::label('gravity', 'Gravedad') !!}
+  <br>
+  <label>
+    {!! Form::radio('gravity', 'HIGH') !!} Alta
+  </label>
+  &nbsp
+  <label>
+    {!! Form::radio('gravity', 'MEDIUM') !!} Media
+  </label>
+  &nbsp
+  <label>
+    {!! Form::radio('gravity', 'LOW') !!} Baja
+  </label>
+
+</div>
 
 <div class="form-group">
 
